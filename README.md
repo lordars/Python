@@ -1,9 +1,10 @@
-Simulador de Banco em Python
+## Simulador de Banco em Python
 
 Este programa simula um sistema bancário simples, permitindo ao usuário realizar depósitos, saques e consultar o extrato.
 
-Menu de Opções
+### Menu de Opções
 
+```python
 menu = """
 [d] Depositar
 [s] Sacar
@@ -11,17 +12,21 @@ menu = """
 [q] Sair
 
 => """
+```
 
-Variáveis Iniciais
+### Variáveis Iniciais
 
+```python
 saldo = 0
 limite = 500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
+```
 
-Loop Principal
+### Loop Principal
 
+```python
 while True:
     opcao = input(menu)
 
@@ -65,16 +70,16 @@ while True:
 
     else:
         print("Operação inválida, por favor selecione novamente a operação desejada.")
+```
 
-Funcionamento
+### Funcionamento
 
-O usuário pode escolher entre as opções de depósito (d), saque (s), extrato (e) ou sair (q).
+1. O usuário pode escolher entre as opções de depósito (`d`), saque (`s`), extrato (`e`) ou sair (`q`).
+2. O sistema controla o limite de saque diário e o número máximo de saques permitidos.
+3. As transações são armazenadas e exibidas no extrato.
+4. O programa só encerra quando o usuário escolhe a opção `q`.
 
-O sistema controla o limite de saque diário e o número máximo de saques permitidos.
-
-As transações são armazenadas e exibidas no extrato.
-
-O programa só encerra quando o usuário escolhe a opção q.
+---
 
 Este código é útil para demonstrar conceitos básicos de programação como loops, condicionais e manipulação de strings em Python.
 
